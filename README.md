@@ -17,3 +17,6 @@ Complete Snakemake pipeline for Bovine Respiratory Disease (BRD) multi-omics ana
 chmod +x run_analysis.sh
 ./run_analysis.sh your_cohort
 # 3. Extract markers from figures/gwas_lead_snps.csv
+
+McCulloch, CR (2026). Field-Deployable Snakemake Pipeline for BRD Multi-Omics Analysis. 
+Frontiers Genetics. github.com/Cameron-99/BRD_MultiOmics
