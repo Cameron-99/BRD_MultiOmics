@@ -1,12 +1,19 @@
-# BRD Multi-Omics: Neutrophil-DC Hub (Frontiers Genetics 2026)
-Neutrophil-DC biomarkers | BTA6/14 QTLs | XGBoost AUC 0.92
+# Field-Deployable BRD Multi-Omics Pipeline
 
-**Key files:**
-- Table_S1.csv: GWAS QTLs (BTA6/14)
-- *.tiff: Neutrophil-DC network, Manhattan plot, XGBoost ROC
+**Frontiers Genetics** (submitted Feb 2026)  
+**Cameron-99/BRD_MultiOmics v1.0** - DOI-ready archive
 
-Raw data: NCBI BioProject PRJNA
-Results: Table_S1.csv + figures (*.tiff)
+Complete Snakemake pipeline for Bovine Respiratory Disease (BRD) multi-omics analysis  
+**Hardware:** Intel i5, 16GB RAM, Linux (tested LMDE7 Cinnamon)  
+**Runtime:** 40 minutes full analysis, 2 minutes toy test
 
-**Raw data:** NCBI BioProject PRJNA
-**Code:** Snakemake pipeline (contact corresponding author) cameron.mcculloch@gmx.at
+## 🎯 For Veterinarians & Breeders
+
+**Three steps to BRD resistance markers:**
+
+```bash
+# 1. Prepare your data (VCF + expression TSV + BRD status CSV)
+# 2. Run pipeline  
+chmod +x run_analysis.sh
+./run_analysis.sh your_cohort
+# 3. Extract markers from figures/gwas_lead_snps.csv
